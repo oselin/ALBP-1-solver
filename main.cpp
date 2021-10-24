@@ -7,8 +7,6 @@
 
 int main(){
 
-    int m;
-    int cycleTime;
     std::unordered_map<int,std::vector<int>> pg;
 
     pg[1] = {2,3};
@@ -24,16 +22,13 @@ int main(){
 
     std::vector<int> time = {3,7,20,1,8,4,9,11,6,6};
 
-    int c = 36;
 
-    std::unordered_map<int,std::vector<int>> rev = reversePG(pg);
+    //int c = 36;
 
 
-    //run(c, pg, time);
-    std::vector<int> r = RPWs(pg, time);
 
-    for (int i=0; i< r.size(); i++){
-        std::cout << i << ": " << r[i] << std::endl;
-    }
-    return 0;
+    PrecedenceGraph p (time, pg);
+
+    for (auto i : p.RPWs()) std::cout << i.first << ": " << i.second << std::endl;
+
 }
