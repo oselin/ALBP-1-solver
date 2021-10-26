@@ -24,7 +24,8 @@ class PrecedenceGraph{
 
         std::unordered_map<int,int> RPWs();
         std::vector<int> BKs(int, std::vector<int>);
-        void run();
+        void SALBP_1();
+        void SALBP_2();
 
         
 };

@@ -4,7 +4,7 @@
 #include <string>
 #include <algorithm>
 
-#include "../include/ALBP.h"
+#include "../include/HeuristicAlgorithm.h"
 
 
 
@@ -45,7 +45,7 @@ std::vector<int> PrecedenceGraph::BKs(int task, std::vector<int> taskAssigned){
 }
 
 
-void PrecedenceGraph::run(){
+void PrecedenceGraph::SALBP_1(){
     ////make a list of all the tasks that must be assigned
     //std::vector<int> tasksLeft;
     //for (auto k : this->tasks) tasksLeft.push_back(k.first);
@@ -91,6 +91,8 @@ void PrecedenceGraph::run(){
     //    }
     //}
 }
+
+void PrecedenceGraph::SALBP_2(){}
 
 
 

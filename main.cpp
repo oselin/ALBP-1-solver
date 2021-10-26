@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
-#include "include/ALBP.h"
+#include "include/HeuristicAlgorithm.h"
 
 
 int main(){

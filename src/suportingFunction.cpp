@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include "../include/ALBP.h"
+#include "../include/HeuristicAlgorithm.h"
 
 
 
