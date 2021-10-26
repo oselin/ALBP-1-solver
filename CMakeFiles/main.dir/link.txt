@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/heuristic_algorithm.cpp.o CMakeFiles/main.dir/src/supportingFunction.cpp.o  -o main 
