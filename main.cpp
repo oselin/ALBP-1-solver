@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
-#include "include/HeuristicAlgorithm.h"
+#include <HeuristicAlgorithm.h>
 
 
 int main(){

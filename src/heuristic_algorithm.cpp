@@ -3,8 +3,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-
-#include "../include/HeuristicAlgorithm.h"
+#include <HeuristicAlgorithm.h>
 
 
 
@@ -41,7 +40,9 @@ std::unordered_map<int,int> PrecedenceGraph::get_pattern(int key)
 
 
 std::vector<int> PrecedenceGraph::BKs(int task, std::vector<int> taskAssigned){
-    
+    std::vector<int> todo;
+
+    return todo;
 }
 
 
