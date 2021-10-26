@@ -31,4 +31,9 @@ int main(){
 
     for (auto i : p.RPWs()) std::cout << i.first << ": " << i.second << std::endl;
 
+    std::cout << "-------------------" << std::endl;
+
+    std::vector<int> a = {1,2,3,4,5,6,7,8};
+    for (auto i : p.BKs(9,a)) std::cout << i << std::endl;
+
 }

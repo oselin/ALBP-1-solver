@@ -41,7 +41,22 @@ std::unordered_map<int,int> PrecedenceGraph::get_pattern(int key)
 
 std::vector<int> PrecedenceGraph::BKs(int task, std::vector<int> taskAssigned){
     std::vector<int> todo;
+    
+    if (task<1) todo.push_back(1);
+    else{
+        for (auto i : this->tasks[task]){
+            if (std::find(todo.begin(),todo.end(), i) == todo.end()) todo.push_back(i);
+        }
 
+        for (auto i : taskAssigned){
+            for (auto j : this->tasks[i]){
+                if ((std::find(todo.begin(),todo.end(), j) == todo.end()) && (j != task && (std::find(taskAssigned.begin(),taskAssigned.end(), j) == taskAssigned.end()))){
+                    todo.push_back(j);
+                }
+            }
+        }
+    }
+    
     return todo;
 }
 
